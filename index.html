@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Apocrypha's Records - Coding Group Signup</title>
+</head>
+<body>
+    <!--Title Info-->
+    <section id="header">
+        <h1 id="title">Apocrypha's Records Coding Group Signup</h1>
+        <p id="description"> A form for requesting to join coding projects in the Discord server</p>
+    </section>
+
+    <!--Form-->
+    <section>
+        <form id="survey-form">
+
+            <!--Name-->
+            <fieldset>
+                <label for="name" id="name-label">First Name:
+                    <input type="text" name="first-name" id="name" placeholder="Enter your name" required>
+                </label>
+            </fieldset>
+
+            <!--Discord Name-->
+            <fieldset>
+                <label for="discord-name">Discord Name:
+                    <input type="text" name="discord-name" id="discord-name">
+                </label>
+            </fieldset>
+
+            <!--Email-->
+            <fieldset>
+                <label for="email" id="email-label">Email:
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </label>
+            </fieldset>
+
+            <!--Age-->
+            <fieldset>
+                <label for="age" id="number-label">Age:
+                    <input type="number" name="age" id="number" min="13" max="30" placeholder="Enter your age">
+                </label>
+            </fieldset>
+
+            <!--Gituhub Account-->
+            <fieldset>
+                <label for="github-account">Github Account Link:
+                    <input type="url" name="github-account" id="github-account">
+                </label>
+            </fieldset>
+
+            <!--Programming Container-->
+            <div class="programming-container">
+                <fieldset>
+                    <!--Known Programming Languages-->
+                    <div class="skill-type">
+                        <label for="proficient-languages">Most Proficient Programming Language:
+                            <select name="known-programming-languages" id="dropdown">
+                                <option value="">(please select)</option>
+                                <option value="python">Python</option>
+                                <option value="java">Java</option>
+                                <option value="c++">C++</option>
+                                <option value="c#">C#</option>
+                                <option value="other">Other</option>
+                                <option value="multiple">Multiple</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <!--Language Proficiency-->
+                    <div class="skill-proficiency">
+                        <label for="programming-proficiency">Proficiency:
+                            <input type="radio" name="programming-proficiency" class="proficiency" value="beginner">Beginner
+                            <input type="radio" name="programming-proficiency" class="proficiency" value="intermediate">Intermediate
+                            <input type="radio" name="programming-proficiency" class="proficiency" value="advanced">Advanced
+                            <input type="radio" name="programming-proficiency" class="proficiency" value="expert">Expert
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!--Markup Container-->
+            <div class="markup-container">
+                <fieldset>
+                    <!--Proficient Markup Languages-->
+                    <div class="skill-type">
+                        <label for="markup-proficiency">Most Proficient Markup Language:
+                            <select name="known-markup-languages" id="markup-lang">
+                                <option value="">(please select)</option>
+                                <option value="html+css">HTML & CSS</option>
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="xml">XML</option>
+                                <option value="json">JSON</option>
+                                <option value="other">Other</option>
+                                <option value="multiple">Multiple</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <!--Language Proficiency-->
+                    <div class="skill-proficiency">
+                        <label for="programming-proficiency">Proficiency:
+                            <input type="radio" name="programming-proficiency" value="beginner">Beginner
+                            <input type="radio" name="programming-proficiency" value="intermediate">Intermediate
+                            <input type="radio" name="programming-proficiency" value="advanced">Advanced
+                            <input type="radio" name="programming-proficiency" value="expert">Expert
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            
+            <!--Other Skills-->
+            <fieldset>
+                <label for="other-skills">Other Skills:
+                    <input type="checkbox" name="other-skill" value="web-dev">Web Dev
+                    <input type="checkbox" name="other-skill" value="android-app-dev">Android App Dev
+                    <input type="checkbox" name="other-skill" value="ios-app-dev"> IOS App Dev
+                    <input type="checkbox" name="other-skill" value="front-end">Front-End
+                    <input type="checkbox" name="other-skill" value="back-end">Back-End
+                    <input type="checkbox" name="other-skill" value="api">API's
+                    <input type="checkbox" name="other-skill" value="scripts">Scripts
+                    <input type="checkbox" name="other-skill" value="animation">Animation
+                    <input type="checkbox" name="other-skill" value="photoshop">Photoshop
+                </label>
+            </fieldset>
+
+            <!--Other-->
+            <fieldset id="other-information">
+                <label for="etc">Is there anything else you wanna tell me?
+                    <textarea name="etc" id="other-info" rows="7" cols="30" placeholder="Enter any other information or skills."></textarea>
+                </label>
+            </fieldset>
+
+            <!--Form Submit Button-->
+            <fieldset>
+                <button type="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
